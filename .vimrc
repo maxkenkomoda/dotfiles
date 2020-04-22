@@ -17,8 +17,6 @@ set noswapfile
 "マウス有効
 set mouse=a
 
-"単語ごとに色分けするようにする
-syntax enable
 
 
 "表示での設定__________________________________
@@ -31,6 +29,11 @@ set showmatch
 
 "title表示
 set title
+
+
+
+
+
 
 "画面分割____________________________________
 nnoremap wj <C-w>j
@@ -51,7 +54,7 @@ set fileencodings=utf-8,ucs-boms,euc-jp,ep932
 set fileformats=unix,dos,mac
 set ambiwidth=double
 set nobomb
-set t_Co=256
+
 
 
 
@@ -142,3 +145,16 @@ if dein#check_install()
 endif
 
 " ------------------------------------------------------------
+
+
+
+"syntax__________
+syntax on
+colorscheme molokai
+set t_Co=256
+
+if &term == "xterm-256color"
+    colorscheme molokai
+    hi Comment ctermfg=102
+    hi Visual  ctermbg=248
+endif
