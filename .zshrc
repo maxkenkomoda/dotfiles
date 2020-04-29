@@ -23,3 +23,6 @@ alias t='tmux'
 eval "$(rbenv init -)"
 eval "$(rbenv init -)"
 eval "$(rbenv init -)"
+eval "$(anyenv init -)"
+
+export PATH="$HOME/.nodenv/bin:$PATH"
