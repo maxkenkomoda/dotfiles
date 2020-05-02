@@ -17,7 +17,8 @@ set noswapfile
 "マウス有効
 set mouse=a
 
-
+"undo無制限
+set undofile
 
 "表示での設定__________________________________
 
