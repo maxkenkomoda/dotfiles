@@ -18,7 +18,7 @@ set noswapfile
 set mouse=a
 
 "undo無制限
-set undofile
+set noundofile
 
 "表示での設定__________________________________
 
@@ -149,7 +149,7 @@ endif
 
 
 
-"syntax__________
+"syntax_______________________________________________________
 syntax on
 colorscheme molokai
 set t_Co=256
