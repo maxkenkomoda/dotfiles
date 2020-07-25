@@ -157,5 +157,5 @@ set t_Co=256
 if &term == "xterm-256color"
     colorscheme molokai
     hi Comment ctermfg=102
-    hi Visual  ctermbg=248
+    hi Visual  ctermbg=255
 endif

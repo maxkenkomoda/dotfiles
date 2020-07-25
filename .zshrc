@@ -26,3 +26,6 @@ eval "$(rbenv init -)"
 eval "$(anyenv init -)"
 
 export PATH="$HOME/.nodenv/bin:$PATH"
+export PATH=/usr/local/opt/mysql@5.7/bin/:$PATH
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
