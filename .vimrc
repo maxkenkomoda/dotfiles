@@ -31,6 +31,8 @@ set showmatch
 "title表示
 set title
 
+" 折り畳みしない
+set foldlevel=50
 
 
 
@@ -60,12 +62,22 @@ set nobomb
 
 
 "インデント_____________________________________
+filetype plugin indent on
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set autoindent
 set smartindent
+
+au FileType go setlocal sw=4 ts=4 sts=4 noet
+set list listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
+
+" 括弧の補完
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
 
 "挿入モードでバックスペースを使う 
 set backspace=indent,eol,start
@@ -101,8 +113,18 @@ imap <C-h> <BS>
 imap <C-k> <C-r>=<SID>kill()<CR>
 
 
-
-
+"全角スペースをハイライト表示"
+function! ZenkakuSpace()
+    highlight ZenkakuSpace cterm=reverse ctermfg=red gui=reverse guifg=red
+endfunction   
+if has('syntax')
+    augroup ZenkakuSpace
+        autocmd!
+        autocmd ColorScheme       * call ZenkakuSpace()
+        autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+    augroup END
+    call ZenkakuSpace()
+endif
 
 
 
