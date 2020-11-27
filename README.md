@@ -1,2 +1,3 @@
-# dotfiles
-Vim スクリプトなど
+# dotfiles of Max
+
+
