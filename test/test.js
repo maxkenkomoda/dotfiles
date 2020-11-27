@@ -17,3 +17,4 @@ console.log
 hokkaido();
 
 hokkaido = okayama;
+
