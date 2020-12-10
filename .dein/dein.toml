@@ -1,4 +1,10 @@
 [[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   let NERDTreeShowHidden=1
@@ -110,3 +116,4 @@ hook_add = '''
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
 '''
+

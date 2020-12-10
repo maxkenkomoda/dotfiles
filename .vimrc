@@ -34,8 +34,8 @@ set title
 " 折り畳みしない
 set foldlevel=50
 
-
-
+"現在の行をハイライト
+set cursorline
 
 
 "画面分割____________________________________
@@ -157,27 +157,22 @@ if dein#load_state(s:dein_dir)
 
   call dein#load_toml(s:toml)
   call dein#load_toml(s:toml_lazy, {'lazy': 1})
-
+  
   call dein#end()
   call dein#save_state()
 endif
+
 
 " インストールしていないプラグインがあればインストールを実行
 if dein#check_install()
   call dein#install()
 endif
 
+
 " ------------------------------------------------------------
 
-
-
-"syntax_______________________________________________________
+"syntax_______________________________________________________ 
 syntax on
-colorscheme molokai
 set t_Co=256
+colorscheme hybrid
 
-if &term == "xterm-256color"
-    colorscheme molokai
-    hi Comment ctermfg=102
-    hi Visual  ctermbg=255
-endif
