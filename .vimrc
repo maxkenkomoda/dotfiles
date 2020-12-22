@@ -105,6 +105,7 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 " complement ''""
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
+inoremap ` ``<LEFT>
 
 " use backspace when inserting mode
 set backspace=indent,eol,start
