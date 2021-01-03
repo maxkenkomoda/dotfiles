@@ -170,10 +170,20 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
+
 " install if there is no-installed plugin 
 if dein#check_install()
   call dein#install()
 endif
+
+"----------------------------------------
+"plugin key
+"----------------------------------------
+nmap ? <Plug>(caw:zeropos:toggle)
+vmap ? <Plug>(caw:zeropos:toggle)
+
+
+
 
 "----------------------------------------
 "syntax

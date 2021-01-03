@@ -1,5 +1,4 @@
   const very = 'とても';
-
 const hokkaido = () => {
   const very = 'なまら';
   very + '!';

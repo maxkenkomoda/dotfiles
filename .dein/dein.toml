@@ -5,9 +5,15 @@ hook_add = '''
   let NERDTreeShowHidden=1
   nnoremap <silent><C-a> :NERDTreeFind<CR>:vertical res 40<CR>
 '''
+
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
 #Dein.vim
 [[plugins]]
 repo = 'Shougo/dein.vim'
+
 
 #ClorScheme
 [[plugins]]
@@ -24,6 +30,8 @@ hook_add = '''
     autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=237
     autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
 '''
+
+
 #Git diff display
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -37,6 +45,7 @@ hook_add = '''
     highlight GitGutterChangeDelete ctermfg=yellow
 '''
 
+
 #Rainbow
 [[plugins]]
 repo = 'luochen1990/rainbow'
@@ -44,11 +53,6 @@ hook_add = '''
     let g:rainbow_active = 1
 '''
 
-[[plugins]]
-repo = 'tomtom/tcomment_vim'
-hook_add = '''
-  vnoremap C :'<,'>TComment<CR>
-'''
 
 #Closetag 
 [[plugins]]
@@ -63,13 +67,16 @@ hook_add = '''
   let g:closetag_shortcut='>'
 '''
 
+
 #Vim icons
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+
 #Display devide
 [[plugins]]
 repo = 'simeji/winresizer'
+
 
 #Vim airline
 [[plugins]]
@@ -84,6 +91,7 @@ hook_add = '''
     let g:airline#extensions#tabline#buffer_idx_mode = 1
     let g:airline#extensions#tabline#fnamemod = ':t'
 '''
+
 
 #Linter
 [[plugins]]
@@ -110,7 +118,6 @@ hook_add = '''
 '''
 
 
-
 #Language Server
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -134,5 +141,3 @@ hook_add = '''
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
 '''
-
-
