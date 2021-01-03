@@ -16,7 +16,7 @@ console.log
 
 hokkaido();
 
-hokkaido = okayama;
+hokkaido = okayamaVkkk;
 
 
 //hogehoge

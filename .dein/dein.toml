@@ -1,16 +1,20 @@
+# directory tree
+[[plugins]]
+repo = 'preservim/nerdtree'
+hook_add = '''
+  let NERDTreeShowHidden=1
+  nnoremap <silent><C-a> :NERDTreeFind<CR>:vertical res 40<CR>
+'''
+#Dein.vim
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+#ClorScheme
 [[plugins]]
 repo = 'w0ng/vim-hybrid'
 
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  let NERDTreeShowHidden=1
-    nnoremap <silent><C-a> :NERDTreeFind<CR>:vertical res 30<CR>
-'''
 
+#Indent guides
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
 hook_add = '''
@@ -20,7 +24,7 @@ hook_add = '''
     autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=237
     autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=240
 '''
-
+#Git diff display
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 hook_add = '''
@@ -33,12 +37,20 @@ hook_add = '''
     highlight GitGutterChangeDelete ctermfg=yellow
 '''
 
+#Rainbow
 [[plugins]]
 repo = 'luochen1990/rainbow'
 hook_add = '''
     let g:rainbow_active = 1
 '''
 
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+hook_add = '''
+  vnoremap C :'<,'>TComment<CR>
+'''
+
+#Closetag 
 [[plugins]]
 repo = 'alvan/vim-closetag'
 on_ft = ['html', 'xhtml', 'javascript', 'typescript', 'javascript.jsx', 'typescript.tsx']
@@ -51,13 +63,15 @@ hook_add = '''
   let g:closetag_shortcut='>'
 '''
 
+#Vim icons
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+#Display devide
 [[plugins]]
 repo = 'simeji/winresizer'
 
-
+#Vim airline
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 [[plugins]]
@@ -71,6 +85,7 @@ hook_add = '''
     let g:airline#extensions#tabline#fnamemod = ':t'
 '''
 
+#Linter
 [[plugins]]
 repo = 'dense-analysis/ale'
 hook_add = '''
@@ -94,6 +109,9 @@ hook_add = '''
   let g:ale_javascript_prettier_use_local_config=1
 '''
 
+
+
+#Language Server
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
@@ -116,3 +134,5 @@ hook_add = '''
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
 '''
+
+
