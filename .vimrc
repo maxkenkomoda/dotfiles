@@ -97,7 +97,6 @@ set list listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 inoremap { {}<LEFT>
 inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
-inoremap < <><LEFT>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
