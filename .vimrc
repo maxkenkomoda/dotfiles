@@ -119,6 +119,7 @@ set ignorecase
 " highlights when search
 set hlsearch
 
+
 "----------------------------------------
 "key binding
 "----------------------------------------
