@@ -14,7 +14,7 @@ PROMPT='%F{green}%m@%n%f %F{red}%~%f$ '
 
 #Alias
 alias t='tmux'
-alias shut='sudo shutdown -r now'
+alias shut='sudo shutdown -h now'
 
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
@@ -50,3 +50,6 @@ if [ -f '/Users/maxken/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxken/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/maxken/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxken/google-cloud-sdk/completion.zsh.inc'; fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
