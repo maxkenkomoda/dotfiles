@@ -45,18 +45,12 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='--height 30% --border'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/maxken/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxken/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/maxken/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxken/google-cloud-sdk/completion.zsh.inc'; fi
 
-<<<<<<< HEAD
-=======
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
->>>>>>> dev
