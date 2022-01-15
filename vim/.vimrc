@@ -44,7 +44,7 @@ set cursorline
 "Hilight japanese space
 function! ZenkakuSpace()
     highlight ZenkakuSpace cterm=reverse ctermfg=red gui=reverse guifg=red
-endfunction   
+endfunction
 if has('syntax')
     augroup ZenkakuSpace
         autocmd!
@@ -113,7 +113,7 @@ set backspace=indent,eol,start
 "serch system
 "----------------------------------------
 
-" ignore case 
+" ignore case
 set ignorecase
 
 " highlights when search
@@ -135,13 +135,13 @@ imap <C-h> <BS>
 imap <C-k> <C-r>=<SID>kill()<CR>
 
 "----------------------------------------
-"dein.vim plugin manager 
+"dein.vim plugin manager
 "----------------------------------------
 if &compatible
   set nocompatible
 endif
 
-" installing directory of plugin 
+" installing directory of plugin
 let s:dein_dir = expand('~/.vim/bundles')
 
 " dein.vim
@@ -155,7 +155,7 @@ if &runtimepath !~# '/dein.vim'
 endif
 
 " setting toml
-let s:toml_dir=expand('~/.dein/')
+let s:toml_dir=expand('~/dein/')
 let s:toml=s:toml_dir . 'dein.toml'
 let s:toml_lazy=s:toml_dir . 'dein-lazy.toml'
 
@@ -165,13 +165,13 @@ if dein#load_state(s:dein_dir)
 
   call dein#load_toml(s:toml)
   call dein#load_toml(s:toml_lazy, {'lazy': 1})
-  
+
   call dein#end()
   call dein#save_state()
 endif
 
 
-" install if there is no-installed plugin 
+" install if there is no-installed plugin
 if dein#check_install()
   call dein#install()
 endif
@@ -195,4 +195,3 @@ nmap <silent> gr <Plug>(coc-references)
 syntax on
 set t_Co=256
 colorscheme hybrid
-
