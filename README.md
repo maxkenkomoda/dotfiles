@@ -14,7 +14,7 @@
 sh installer/NAME_OF_FILE.sh
 ```
 
-## extra things to do
+## Extra things to do
 ### vim icons
 #### macOS iterm2
 `Preferences > Profiles > Text > Font`
