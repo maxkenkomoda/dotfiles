@@ -67,9 +67,9 @@ hook_add = '''
 '''
 
 
-#Vim icons
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
+# #Vim icons
+# [[plugins]]
+# repo = 'ryanoasis/vim-devicons'
 
 
 #Display devide

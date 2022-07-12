@@ -7,6 +7,7 @@ cd $HOME
 echo "Current directory is ${CURRENT_DIR}"
 echo "Create Symbolic links"
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/zsh/.zshrc.local ~/.zshrc.local
 ln -s ~/dotfiles/vim/dein ~/dein
 ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
 ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf

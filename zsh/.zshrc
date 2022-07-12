@@ -10,7 +10,7 @@ setopt correct_all
 #set color
 autoload -Uz colors
 colors
-PROMPT='%F{green}%m@%n%f %F{red}%~%f$ '
+PROMPT='%F{green}%m@%n%f %F{red}%~%f%# '
 
 autoload -U compinit
 compinit -u
@@ -21,8 +21,9 @@ compinit -u
 #--------------------
 alias t='tmux'
 alias v ='vim'
-alias shut='sudo shutdown -h now'
-
+alias rdf='source ~/.zshrc'
+alias df='cd ~/dotfiles'
+alias dev='cd ~/max-dev'
 
 #--------------------
 # rbenv
@@ -56,11 +57,7 @@ export FZF_DEFAULT_OPTS='--height 30% --border'
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
-
 #--------------------
-# GCP
+# load local zshrc
 #--------------------
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/maxken/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxken/google-cloud-sdk/path.zsh.inc'; fi
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/maxken/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxken/google-cloud-sdk/completion.zsh.inc'; fi
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
