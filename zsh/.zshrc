@@ -24,6 +24,9 @@ alias v ='vim'
 alias rdf='source ~/.zshrc'
 alias df='cd ~/dotfiles'
 alias dev='cd ~/max-dev'
+alias ..='cd ..'
+alias ....='cd ../..'
+
 
 #--------------------
 # rbenv
