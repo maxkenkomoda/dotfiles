@@ -1,0 +1,19 @@
+{
+  "name": "max-dotfiles",
+  "version": "1.0.0",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxkenkomoda/dotfiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxkenkomoda/dotfiles/issues"
+  },
+  "homepage": "https://github.com/maxkenkomoda/dotfiles#readme",
+  "dependencies": {
+    "@cybozu/eslint-config": "^17.0.3",
+    "eslint": "^8.23.0"
+  }
+}

@@ -1,3 +1,4 @@
 local/*
 .DS_Store
 /zsh/.zshrc.local
+/node_modules

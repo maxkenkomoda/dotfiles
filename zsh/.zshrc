@@ -15,6 +15,9 @@ PROMPT='%F{green}%m@%n%f %F{red}%~%f%# '
 autoload -U compinit
 compinit -u
 
+#history file
+HISTFILE='../../.zsh_history'
+HISTFILESIZE=3000
 
 #--------------------
 # Alias
@@ -24,6 +27,7 @@ alias v ='vim'
 alias rdf='source ~/.zshrc'
 alias df='cd ~/dotfiles'
 alias dev='cd ~/max-dev'
+alias hisall='history 1'
 
 #--------------------
 # rbenv
