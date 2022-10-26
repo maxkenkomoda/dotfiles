@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 #----------------------------------------
 # Create symbolic files in home directory
@@ -49,6 +49,12 @@ echo 'Installing dein.vim'
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.vim/bundles
 echo 'Complete installing dein.vim'
+
+echo 'Installing git-prompt ...'
+curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
+echo 'Complete installing git-prompt'
 
 
 #----------------------------------------

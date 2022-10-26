@@ -1,21 +1,38 @@
 #--------------------
+# git-prompt setting
+#--------------------
+# load git-prompt
+source ~/git-prompt.sh
+
+# load git-completion
+fpath=(~/ $fpath)
+zstyle ':completion:*:*:git:*' script ~/git-completion.bash
+autoload -Uz compinit && compinit
+
+# Options for git-prompt
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
+#--------------------
 # custom settings
 #--------------------
-#spell check
+# spell check
 setopt correct
 
-#spell check all
+# spell check all
 setopt correct_all
 
-#set color
+# set color
 autoload -Uz colors
 colors
-PROMPT='%F{green}%m@%n%f %F{red}%~%f%# '
+setopt PROMPT_SUBST ; PS1='%F{green}%m@%n%f: %F{red}%~%f %F{cyan}$(__git_ps1 "[branch: %s]")%f\$ '
 
 autoload -U compinit
 compinit -u
 
-#history file
+# history file
 HISTFILE='../../.zsh_history'
 HISTFILESIZE=3000
 
