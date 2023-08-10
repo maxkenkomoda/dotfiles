@@ -45,6 +45,8 @@ alias rdf='source ~/.zshrc'
 alias df='cd ~/dotfiles'
 alias dev='cd ~/max-dev'
 alias hisall='history 1'
+alias ghprco='gh pr checkout'
+alias gl='git log --oneline'
 
 #--------------------
 # rbenv
@@ -77,6 +79,12 @@ export FZF_DEFAULT_OPTS='--height 30% --border'
 #--------------------
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+#--------------------
+# go
+#--------------------
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 #--------------------
 # load local zshrc
