@@ -44,9 +44,13 @@ alias v ='vim'
 alias rdf='source ~/.zshrc'
 alias df='cd ~/dotfiles'
 alias dev='cd ~/max-dev'
-alias hisall='history 1'
-alias ghprco='gh pr checkout'
+alias hisall='history'
+alias hiss='history | grep'
+alias ghr='gh pr checkout'
 alias gl='git log --oneline'
+alias crs='cursor .'
+alias gifcmd="ffmpeg"
+alias makegif='timestamp=$(date +"%Y-%m-%d_%H-%M-%S"); ffmpeg -i ~/Desktop/ss.mov -r 10 ~/Desktop/ss_${timestamp}.gif && mv ~/Desktop/ss.mov ~/Desktop/ss_${timestamp}.mov'
 
 #--------------------
 # rbenv

@@ -56,6 +56,9 @@ curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/con
 curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 echo 'Complete installing git-prompt'
 
+echo 'Installing ffmpeg ...'
+brew install ffmpeg
+echo 'Complete installing ffmpeg'
 
 #----------------------------------------
 # install vim
