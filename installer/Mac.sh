@@ -21,11 +21,6 @@ brew update
 brew doctor
 echo 'Complete installing Homebrew'
 
-echo "Installing zsh ..."
-brew install zsh
-brew install zsh-completion
-echo 'Complete installing zsh'
-
 echo "Installing Git ..."
 brew install git
 brew install gh
