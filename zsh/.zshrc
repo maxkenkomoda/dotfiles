@@ -50,7 +50,8 @@ alias ghr='gh pr checkout'
 alias gl='git log --oneline'
 alias crs='cursor .'
 alias gifcmd="ffmpeg"
-alias makegif='timestamp=$(date +"%Y-%m-%d_%H-%M-%S"); ffmpeg -i ~/Desktop/ss.mov -r 10 ~/Desktop/ss_${timestamp}.gif && mv ~/Desktop/ss.mov ~/Desktop/ss_${timestamp}.mov'
+alias ssmakegif='timestamp=$(date +"%Y-%m-%d_%H-%M-%S"); ffmpeg -i ~/Desktop/ss.mov -r 10 ~/Desktop/ss_${timestamp}.gif && mv ~/Desktop/ss.mov ~/Desktop/ss_${timestamp}.mov'
+alias makegif='latest_mov=$(ls -t ~/Desktop/*.mov 2>/dev/null | head -1); if [ -z "$latest_mov" ]; then echo "movファイルが見つかりません"; else timestamp=$(date +"%Y-%m-%d_%H-%M-%S"); ffmpeg -i "$latest_mov" -r 10 ~/Desktop/gif_${timestamp}.gif && echo "変換完了: gif_${timestamp}.gif"; fi'
 
 #--------------------
 # rbenv
@@ -94,3 +95,7 @@ export PATH=$PATH:$GOPATH/bin
 # load local zshrc
 #--------------------
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/k002408/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
